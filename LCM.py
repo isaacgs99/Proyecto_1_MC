@@ -1,6 +1,8 @@
 import numpy as np
 np.set_printoptions(suppress=True)
 
+# X0 = 6, a = 32, c = 3, m = 80
+
 print("METODO LINEAL CONGRUENCIAL\n")
 
 x0 = input("X0 = ")

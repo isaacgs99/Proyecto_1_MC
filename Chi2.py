@@ -8,13 +8,13 @@ with open('chi_data.txt') as f:
     lines = np.sort(lines)
 
 
-def classes(n):
-    c = 1 + (3.3*np.log10(n))
-    return int(np.fix(c) + 1)
+# def classes(n):
+#     c = 1 + (3.3*np.log10(n))
+#     return int(np.fix(c) + 1)
 
 
-def width(maximum, minimum, c):
-    return float(np.round((maximum-minimum)/c, decimals=4))
+# def width(maximum, minimum, c):
+#     return float(np.round((maximum-minimum)/c, decimals=4))
 
 
 def intervals(c, w, minimum):
