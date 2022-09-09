@@ -37,6 +37,7 @@ sigma = sqrt(sigmaSquared)
 z = (numberOfRates-miu)/sigma
 
 # Imprimimos los datos obtenidos y un resumen de todas las operaciones
+print("Do you want to print all the numbers? y/n")
 if printNumbers == "y":
     print("Number list")
     print(numbers)
@@ -46,6 +47,7 @@ print(f"Total of numbers: {len(numbers)} \n")
 print(f"Total signs: {len(numbers)-1} \n")
 print(f"Total runs: {numberOfRates} \n")
 
+print("Do you want to print all the signs? y/n")
 if printNumbers == "y":
     print("Signs generated")
     print(generatedSigns)
