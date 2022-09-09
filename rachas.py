@@ -1,5 +1,7 @@
 from cmath import sqrt
 
+printNumbers = input(
+    "Do you want to print all numbers and generated signs (y/n) :")
 
 file1 = open('runs_data.txt', 'r')
 Lines = file1.readlines()
@@ -35,15 +37,18 @@ sigma = sqrt(sigmaSquared)
 z = (numberOfRates-miu)/sigma
 
 # Imprimimos los datos obtenidos y un resumen de todas las operaciones
+if printNumbers == "y":
+    print("Number list")
+    print(numbers)
 
-print("Number list")
-print(numbers)
 print("\n")
 print(f"Total of numbers: {len(numbers)} \n")
 print(f"Total signs: {len(numbers)-1} \n")
 print(f"Total runs: {numberOfRates} \n")
-print("Signs generated")
-print(generatedSigns)
+
+if printNumbers == "y":
+    print("Signs generated")
+    print(generatedSigns)
 print("\n")
 print("Statistics")
 print(f"miu: {miu}")
